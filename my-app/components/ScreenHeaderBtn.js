@@ -1,7 +1,10 @@
-import {view,Text} from 'react-native';
+import {view,Text, TouchableOpacity} from 'react-native';
+import { Image } from 'expo-image';
 
 export default function ScreenHeaderBtn(){
     return(
-        <Text>ScreenHeaderBtn</Text>
+        <TouchableOpacity>
+          <Image source={require('../assets/images/home_bg.jpg')} style={{width:45,height:45,borderRadius:15}}/>  
+        </TouchableOpacity>
     )
 }

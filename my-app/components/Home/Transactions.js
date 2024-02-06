@@ -10,13 +10,11 @@ export default function Transactions() {
     const [fontsLoaded, fontError] = useFonts({
       'Poppins-Bold': require('../../assets/fonts/Poppins-Bold.ttf'),
     });
-
     const onLayoutRootView = useCallback(async () => {
       if (fontsLoaded || fontError) {
         await SplashScreen.hideAsync();
       }
     }, [fontsLoaded, fontError]);
-
     if (!fontsLoaded && !fontError) {
       return null;
     }
@@ -52,6 +50,8 @@ export default function Transactions() {
       </View>
     </View>
     {/**Transactions*/}
+    <TransactionCard/>
+    <TransactionCard/>
     <TransactionCard/>
   </View>
   )

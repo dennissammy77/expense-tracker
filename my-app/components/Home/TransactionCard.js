@@ -4,6 +4,7 @@ import { COLORS, SIZES } from '../../constants';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
+import * as SplashScreen from 'expo-splash-screen';
 
 export default function TransactionCard() {
 
@@ -23,7 +24,7 @@ export default function TransactionCard() {
       }
 
   return (
-    <View style={{display:'flex',flexDirection:'row',alignItems:'center',borderRadius:20,backgroundColor:COLORS.secondary,padding:10,marginVertical:6}}>
+    <View style={{display:'flex',flexDirection:'row',alignItems:'center',borderRadius:20,backgroundColor:COLORS.secondary,padding:10,marginVertical:6}}  onLayout={onLayoutRootView}>
         <View style={{padding:10,backgroundColor:'#c4c4c4',borderRadius:100,alignItems:'center',justifyContent:'center'}}>
             <MaterialCommunityIcons name="food-apple" size={24} color="black" />
         </View>

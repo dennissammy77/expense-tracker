@@ -23,6 +23,7 @@ export default function App() {
           ),
           headerTitle: "",
         }}
+        style={{marginVertical:10}}
       />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{

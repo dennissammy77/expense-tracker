@@ -23,7 +23,10 @@ const Salutations = () => {
   return (
     <View onLayout={onLayoutRootView}>
       <Text style={{fontSize:SIZES.medium,color:COLORS.gray,fontFamily: 'Poppins-Bold'}}>Good evening,</Text>
+      {/**
       <Text style={{fontSize:SIZES.xxLarge,color:COLORS.primary,fontFamily: 'Poppins-Bold'}}>Dennis Sammy</Text>
+       * 
+       */}
     </View>
   )
 }
