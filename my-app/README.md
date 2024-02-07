@@ -21,3 +21,5 @@ https://expo.github.io/router/docs/category/react-navigation/
 
 expo fonts docs:
 https://docs.expo.dev/develop/user-interface/fonts/
+/c/New folder/new/expense-tracker/my-app
+
