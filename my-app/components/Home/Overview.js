@@ -4,7 +4,8 @@ import { useCallback } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { COLORS, SIZES } from '../../constants';
 import { Image } from 'expo-image';
-
+import { Gesture, GestureDetector, GestureRootView } from 'react-native-gesture-handler';
+import { Easing, interpolate, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 SplashScreen.preventAutoHideAsync();
 
 export default function Overview() {
