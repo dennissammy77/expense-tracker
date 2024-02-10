@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { COLORS, SIZES } from '../../constants';
 import { Feather } from '@expo/vector-icons';
 import TransactionCard from './TransactionCard';
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 export default function Transactions() {
     const [fontsLoaded, fontError] = useFonts({
@@ -20,7 +21,6 @@ export default function Transactions() {
     }
   return (
   <View onLayout={onLayoutRootView}>
-    <Text style={{fontSize:SIZES.large,color:COLORS.primary,fontFamily: 'Poppins-Bold'}}>Transactions</Text>
     <View style={{display:'flex',flexDirection:'row',width:'full',justifyContent:'space-between'}}>
       {/**Income */}
       <View style={{flex:1,marginRight:4,height:100,padding:10,backgroundColor:COLORS.secondary,borderRadius:20,display:'flex',flexDirection:'row',alignItems:'center'}}>
@@ -48,6 +48,10 @@ export default function Transactions() {
           <Text style={{fontSize:SIZES.medium}}>Expense</Text>
         </View>
       </View>
+    </View>
+    <View style={{display:'flex',flexDirection:'row',justifyContent:'space-between',marginVertical:5}}>
+      <Text style={{fontSize:SIZES.large,color:COLORS.primary,fontFamily: 'Poppins-Bold'}}>Transactions</Text>
+      <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
     </View>
     {/**Transactions*/}
     <TransactionCard/>
