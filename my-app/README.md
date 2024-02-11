@@ -23,3 +23,4 @@ expo fonts docs:
 https://docs.expo.dev/develop/user-interface/fonts/
 /c/New folder/new/expense-tracker/my-app
 
+https://www.youtube.com/live/TwxdOFcEah4?si=qf1owEhanvjwqv-6
