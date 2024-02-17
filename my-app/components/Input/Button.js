@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { COLORS } from "../../constants";
 
 export default ({ onPress, text, size, theme }) => {
   const buttonStyles = [styles.button];
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
   },
   buttonSecondary: {
-    backgroundColor: "#a6a6a6",
+    backgroundColor: COLORS.tertiary,
   },
   buttonAccent: {
     backgroundColor: "#ffc107",

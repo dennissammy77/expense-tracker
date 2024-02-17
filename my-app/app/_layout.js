@@ -11,7 +11,7 @@ export default function Layout() {
       <Stack.Screen
         name='index'
         options={{
-          headerStyle: { backgroundColor: COLORS.tertiary},
+          headerStyle: { backgroundColor: COLORS.white},
           headerShadowVisible: false,
           headerLeft: () => (
             <ScreenHeaderBtn dimension='60%' />

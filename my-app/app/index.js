@@ -10,7 +10,7 @@ import Salutations from '../components/Home/Salutations';
 export default function Home() {
   const router = useRouter()
   return (
-    <SafeAreaView style={{flex:1,backgroundColor:COLORS.tertiary}}>
+    <SafeAreaView style={{flex:1,backgroundColor:COLORS.white}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{
           flex:1,
