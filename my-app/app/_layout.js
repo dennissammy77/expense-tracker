@@ -8,6 +8,15 @@ import { router } from 'expo-router';
 export default function Layout() {
   return(
     <Stack>
+      <Stack.Screen 
+      name="(tabs)"
+      options={{
+        headerStyle: { backgroundColor: COLORS.white},
+        headerShadowVisible: false,
+        headerTitle: "",
+      }}
+      />
+      {/**
       <Stack.Screen
         name='index'
         options={{
@@ -37,6 +46,8 @@ export default function Layout() {
         headerShown: false,
        }}
       />
+       * 
+       */}
     </Stack>
   );
 }
